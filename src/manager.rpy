@@ -4,21 +4,6 @@
 init python:
     import collections
 
-## This class lets the dev create some events for his game. By default, all the events have the 
-## pending state and are hidden.
-    class Quest:
-        def __init__(self, id, title, category,  state= "pending"):
-            self.id = id
-            self.title = title
-            self.category = category
-            self.state = state
-
-        def __repr__(self):
-            return "<{}>".format(self.title)
-
-
-
-
 
 ## This class allows the developer to perform various operations on the events
     class Manager:
@@ -70,8 +55,8 @@ init python:
 
 #____________Functions to do some tests_____________________
 
-        ## Return True if the category exist in the chapter
-        def exist(self, id, category = ""):
+        ## Return True if the category exists in the chapter
+        def exists(self, id, category = ""):
             if self._search(id, category):
                 return True
             return False
@@ -172,7 +157,7 @@ init python:
             if type(quests) is list:
                 self._add_multi(quests)
                 return
-            if self.exist(quests.id):
+            if self.exists(quests.id):
                 print("Error: already in quests_dict")
                 return
             if quests.category not in self.quests_dict:

@@ -5,7 +5,7 @@ default journal_right_page_adjustment = ui.adjustment()
 
 screen diary_open_btn():
     zorder 1
-    textbutton _("Open diary") action Show("diary") style "diary_open_btn"
+    textbutton "Open diary" action Show("diary") style "open_diary_screen_btn"
 
 
 screen diary():

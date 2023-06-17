@@ -28,22 +28,6 @@ image in_progress = "questmanager/assets/in_progress.png"
 image journal_divider = "questmanager/assets/journal_divider.png"
 
 
-#_______________Open button__________________________
-
-style diary_open_btn is button:
-    xpos 120
-    ypos 60
-    xysize (240, 80)
-    background "questmanager/assets/open_button_idle.png" xalign .5 yalign .5
-    hover_background "questmanager/assets/open_button_over.png"
-
-style diary_open_btn_text is text:
-    yalign 0.5
-    xalign 1.0
-    color "#e12345"
-    outlines [ (0, "#ffffff", 1, 1, 1) ]
-    size 38
-
 
 #___________________Texts and styles_______________________
 
